@@ -1,0 +1,5 @@
+com\mycompany\ejemploquarkus\EjemploQuarkus.class
+com\mycompany\ejemploquarkus\servicios\ProductoResource.class
+com\mycompany\ejemploquarkus\servicios\OrdenResource.class
+com\mycompany\ejemploquarkus\servicios\ProductoServiceClient.class
+com\mycompany\ejemploquarkus\entidades\Producto.class
