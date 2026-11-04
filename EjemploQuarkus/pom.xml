@@ -38,6 +38,14 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-rest-client-jackson</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm-panache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-mysql</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -46,6 +54,11 @@
                 <artifactId>quarkus-maven-plugin</artifactId>
                 <version>${quarkus.platform.version}</version>
                 <extensions>true</extensions>
+                <configuration>
+                    <systemProperties>
+                        <net.bytebuddy.experimental>true</net.bytebuddy.experimental>
+                    </systemProperties>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -71,5 +84,6 @@
                 <quarkus.package.type>native</quarkus.package.type>
             </properties>
         </profile>
-    </profiles>  
+    </profiles>
+    <name>ProductoQuarks</name>
 </project>
